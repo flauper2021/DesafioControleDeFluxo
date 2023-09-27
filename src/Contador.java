@@ -14,6 +14,7 @@ public class Contador extends Contar {
 
         System.out.println("Digite o segundo numero: ");
         parametroDois = terminal.nextInt();
+        System.out.println(" ");
 
         try{
             Contar.contar(parametroUm,  parametroDois);
@@ -22,5 +23,18 @@ public class Contador extends Contar {
         catch(ParametosInvalidosException exception){
             System.out.println("O segundo parâmetro deve ser maior que o primeiro");
         }
+        System.out.println(" ");
+
+        parametroUm = 30;
+        parametroDois = 10;
+
+        try{
+            Contar.contar(parametroUm,  parametroDois);
+                    
+        }
+        catch(ParametosInvalidosException exception){
+            System.out.println("O segundo parâmetro deve ser maior que o primeiro");
+        }
+        System.out.println(" ");
     }
 }

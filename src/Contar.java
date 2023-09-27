@@ -8,8 +8,8 @@ public class Contar {
             throw new ParametosInvalidosException();
         }else{
             int contagem = parametroDois - parametroUm;
-            for(int i=0; i < contagem; i++){
-                System.out.println(i);            
+            for(int i = 0; i < contagem; i++){
+                System.out.println("Iterações: " + (i+1));            
             }    
         }
     }
